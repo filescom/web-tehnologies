@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+    padding: 20px;
+    word-spacing: 10px;
+}
+.kursiv {
+	color: green;
+	font-size: 25px;
+	font-style: italic;
+}
+#img1 {list-style-image:url("../img/1.png")}
+#img2 {list-style-image:url("../img/2.png")}
+#img3 {list-style-image:url("../img/3.png")}
+#img4 {list-style-image:url("../img/4.png")}
+p {text-indent: 20px;}
+.links a:visited {
+    color: red;}
+.links a:hover {color: green;}
+.bodylink a:visited {
+    color: green;}
+.bodylink a:hover {color: blue;}
+.letter {
+	font-family: 'Izhitsa';
+	color: rgb(255, 0, 0);    
+	font-size: 70px;
+	line-height: 60px;    
+	vertical-align: top;
+	display: inline-block;
+	float: left;
+	margin: 0 10px 0 0;}
+
+.linksbg {background-image: url(../img/linksbg.jpg)}
+.linksbg {height: 300px; width: 660px;}
+div.main {
+	background: url(../img/bg2.jpg); top/100% 150px;
+	display: inline-block;
+	width: 100%;
+	text-align: justify;
+	padding: 10px;
+}
+.table_hover td:hover{
+    background: rgba(45, 32, 156, 0.1);
+    font-size: 20px;
+}
