@@ -15,16 +15,19 @@
 	margin: 50px 50px;
 }
 #textTime {
-	width: 220px;
-	font-family: inherit; /* 1 */
-  	font-size: inherit; /* 1 */
-  	line-height: inherit; /* 1 */
+	width: 200px;
   	margin: 0; /* 2 */
   	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 #textDays {
-	width: 200px;
+	width: 220px;
 	border: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 canvas {
       border: 1px solid #000;
