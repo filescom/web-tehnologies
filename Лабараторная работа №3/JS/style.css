@@ -1,3 +1,6 @@
+body{
+	margin: 0px auto;
+}
 #block {
 	background: red;
 	width: 100%;
@@ -13,22 +16,45 @@
 	height: 180px;
 	width: 150px;
 	margin: 50px 50px;
+	cursor: pointer;
 }
 #textTime {
-	width: 200px;
   	margin: 0; /* 2 */
   	border: none;
 	position: absolute;
 	top: 0;
 	right: 0;
+	margin-right: 10px;
 }
 #textDays {
-	width: 220px;
 	border: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	margin-left: 10px;
 }
 canvas {
       border: 1px solid #000;
     }
+.work_six {
+	margin-left: 150px;
+	width: 400px;
+}
+.calc {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 15px;
+}
+.calc__style {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+.calc__style button {
+	height: 40px;
+	width: 40px;
+}
+#result__calc{
+	width: 168px;
+}

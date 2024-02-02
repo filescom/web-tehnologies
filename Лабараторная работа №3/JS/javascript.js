@@ -21,10 +21,27 @@ function increase() {
 	img2.style.width = "245px";
 	img2.style.height = "275px";
 }
-
+function noIncrease() {
+	img2.style.width = "180px";
+	img2.style.height = "150px";
+}
+let isMenuShow = true;
 img2.addEventListener('mouseover', rotate);
 img2.addEventListener('mouseout', norotate);
-img2.addEventListener('click', increase);
+img2.addEventListener('click', function()
+{
+	if (isMenuShow )
+	{
+		increase();
+		isMenuShow  = false;
+	}
+	else
+	{
+		noIncrease();
+	isMenuShow  = true;
+	}
+});
+
 
 let time = document.querySelector('.work_three');
 
@@ -48,7 +65,7 @@ if  (hours < 10) {
 let timeMoscow = (`Московское время: ${hours} : ${min} : ${sec}`);
 
 
-document.getElementById("textTime").value = timeMoscow;
+document.getElementById("textTime").innerHTML = timeMoscow;
 setTimeout('timeInput()', 1000);
 }
 
@@ -72,7 +89,7 @@ else
 	years = year;
 	}
 let dateOut = (`${numberDay} ${monthList[month]} ${years} года, ${Days[day]}`);
-document.getElementById("textDays").value = dateOut;
+document.querySelector("#textDays").innerHTML = dateOut;
 }
 
 days();
@@ -134,37 +151,5 @@ context.strokeText(text, x, y);
 
 /*Шестое задание*/
 
-let calcOneInput = document.getElementById('calcOne');
-let calcTwoInput = document.getElementById('calcTwo');
-let calcSum = document.getElementById('calcSum');
-let calcSub = document.getElementById('calcSub');
-let calcMult = document.getElementById('calcMult');
-let calcDiv = document.getElementById('calcDiv');
-let result;
 
-calcSum.addEventListener('click', function(){
-	let calcOne = parseFloat(calcOneInput.value);
-	let calcTwo = parseFloat(calcTwoInput.value);
-	result = calcOne + calcTwo;
-	alert(result);
-})
-calcSub.addEventListener('click', function(){
-	let calcOne = parseFloat(calcOneInput.value);
-	let calcTwo = parseFloat(calcTwoInput.value);
-	result = calcOne - calcTwo;
-	alert(result);
-})
-calcMult.addEventListener('click', function(){
-	let calcOne = parseFloat(calcOneInput.value);
-	let calcTwo = parseFloat(calcTwoInput.value);
-	result = calcOne * calcTwo;
-	alert(result);
-})
-calcDiv.addEventListener('click', function(){
-	let calcOne = parseFloat(calcOneInput.value);
-	let calcTwo = parseFloat(calcTwoInput.value);
-	result = calcOne / calcTwo;
-	alert(result);
-})
-let operations = document.getElementById('operations');
 
