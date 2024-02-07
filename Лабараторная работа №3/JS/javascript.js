@@ -151,5 +151,7 @@ context.strokeText(text, x, y);
 
 /*Шестое задание*/
 
+let inputCalc = document.querySelector("#input__calc");
+console.log(inputCalc);
 
-
+inputCalc.innerHTML = "sjdfhjsdfh"
