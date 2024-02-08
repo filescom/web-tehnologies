@@ -154,4 +154,52 @@ context.strokeText(text, x, y);
 let inputCalc = document.querySelector("#input__calc");
 console.log(inputCalc);
 
+<<<<<<< HEAD
 inputCalc.innerHTML = "sjdfhjsdfh"
+=======
+let inputA = document.querySelector('#input_a');
+let inputB = document.querySelector('#input_b');
+let resultCalc = document.querySelector('#result_calc');
+let btnSum = document.querySelector('#btn__sum');
+let btnSubtraction = document.querySelector('#btn__subtraction');
+let btnMultiplication = document.querySelector('#btn__multiplication');
+let btnDivision = document.querySelector('#btn__division');
+let btnSin = document.querySelector('#btn__sin');
+let btnCos = document.querySelector('#btn__cos');
+let btnTg = document.querySelector('#btn__tg');
+let btnSQRT = document.querySelector('#btn__sqrt');
+
+
+
+btnSum.addEventListener('click', function(){
+    resultCalc.value = +inputA.value + +inputB.value;
+})
+btnSubtraction.addEventListener('click', function(){
+    resultCalc.value = inputA.value - inputB.value;
+})
+btnMultiplication.addEventListener('click', function(){
+    resultCalc.value = inputA.value * inputB.value;
+})
+btnDivision.addEventListener('click', function(){
+    if (inputB.value == 0){
+        alert('На 0 делить нельзя');
+    }
+    else{
+        resultCalc.value = inputA.value / inputB.value;
+    }
+})
+btnSin.addEventListener('click', function(){
+    resultCalc.value = Math.sin(inputA.value);
+})
+btnCos.addEventListener('click', function(){
+    resultCalc.value = Math.cos(inputA.value);
+})
+btnTg.addEventListener('click', function(){
+    resultCalc.value = Math.tan(inputA.value);
+})
+btnSQRT.addEventListener('click', function(){
+    resultCalc.value = Math.sqrt(inputA.value);
+})
+
+
+>>>>>>> a13d900b6b0006da4b7a15d8bdefb646c54ae937
