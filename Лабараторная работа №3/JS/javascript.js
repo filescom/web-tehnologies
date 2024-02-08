@@ -151,7 +151,12 @@ context.strokeText(text, x, y);
 
 /*Шестое задание*/
 
+let inputCalc = document.querySelector("#input__calc");
+console.log(inputCalc);
 
+<<<<<<< HEAD
+inputCalc.innerHTML = "sjdfhjsdfh"
+=======
 let inputA = document.querySelector('#input_a');
 let inputB = document.querySelector('#input_b');
 let resultCalc = document.querySelector('#result_calc');
@@ -197,3 +202,4 @@ btnSQRT.addEventListener('click', function(){
 })
 
 
+>>>>>>> a13d900b6b0006da4b7a15d8bdefb646c54ae937
