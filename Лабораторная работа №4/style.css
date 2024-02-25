@@ -1,0 +1,11 @@
+#circle {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+}
+body{
+    display: flex;
+    gap: 50px;
+}
