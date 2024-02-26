@@ -1,0 +1,32 @@
+.flags {
+    margin-top: 20px;
+}
+
+.flag {
+    display: none;
+    max-width: 100px;
+}
+
+.flag.visible {
+    display: inline-block;
+}
+.USA{
+    height: 50px;
+    width: 200px;
+}
+.UK{
+    height: 50px;
+    width: 200px;
+}
+.France{
+    height: 50px;
+    width: 200px;
+}
+.Germany{
+    height: 50px;
+    width: 200px;
+}
+.Ucraine{
+    height: 50px;
+    width: 200px;
+}

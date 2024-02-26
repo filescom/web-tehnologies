@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>work 5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страны и флаги</title>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="flag">
-        <input id="ru" type="checkbox">
-        <label for="ru">Russia</label>
-        <div class="flag"></div><br>
-        <input id="fr" type="checkbox">
-        <label for="gr">Germany</label>
-        <div class="flag"></div><br>
-        <input id="usa" type="checkbox">
-        <label for="usa">USA</label>
-        <div class="flag"></div><br>
-        <input id="uc" type="checkbox">
-        <label for="uc">Ucraine</label>
-        <div class="flag"></div><br>
-        <input id="ch" type="checkbox">
-        <label for="ch">China</label>
-        <div class="flag"></div><br>
-    </div>
+
+<h2>Выберите страны для отображения флагов:</h2>
+
+<input type="checkbox" id="usaCheckbox" class="countryCheckbox" value="USA">
+<label for="usaCheckbox">США</label>
+
+<input type="checkbox" id="ukCheckbox" class="countryCheckbox" value="UK">
+<label for="ukCheckbox">Великобритания</label>
+
+<input type="checkbox" id="franceCheckbox" class="countryCheckbox" value="France">
+<label for="franceCheckbox">Франция</label>
+
+<input type="checkbox" id="germanyCheckbox" class="countryCheckbox" value="Germany">
+<label for="germanyCheckbox">Германия</label>
+
+<input type="checkbox" id="ucraineCheckbox" class="countryCheckbox" value="Ucraine">
+<label for="ucraineCheckbox">Украина</label>
+
+<div class="flags">
+    <img src="./usa-flag.jpg" alt="Флаг США" class="flag USA">
+    <img src="uk-flag.jpg" alt="Флаг Великобритании" class="flag UK">
+    <img src="france-flag.jpg" alt="Флаг Франции" class="flag France">
+    <img src="germany-flag.jpg" alt="Флаг Германии" class="flag Germany">
+    <img src="ucraine-flag.jpg" alt="Флаг Украины" class="flag Ucraine">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
