@@ -7,4 +7,7 @@ $(document).ready(function(){
             $("." + country).hide();
         }
     });
+    $( function() {
+        $( "#schools" ).accordion();
+      } );
 });
